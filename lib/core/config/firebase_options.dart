@@ -1,6 +1,13 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 
+/// Replace this file with your own Firebase configuration
+/// You can get this configuration from the Firebase Console
+/// 1. Go to Project Settings
+/// 2. Add a Flutter app
+/// 3. Download the generated firebase_options.dart file
+/// 4. Replace this file with the downloaded one
+
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     switch (defaultTargetPlatform) {
@@ -15,23 +22,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  // TODO: Replace with actual Firebase configuration
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'your-api-key',
-    appId: 'your-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-bucket',
+    apiKey: 'YOUR-ANDROID-API-KEY',
+    appId: 'YOUR-ANDROID-APP-ID',
+    messagingSenderId: 'YOUR-SENDER-ID',
+    projectId: 'YOUR-PROJECT-ID',
+    storageBucket: 'YOUR-STORAGE-BUCKET',
   );
 
-  // TODO: Replace with actual Firebase configuration
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'your-api-key',
-    appId: 'your-app-id',
-    messagingSenderId: 'your-sender-id',
-    projectId: 'your-project-id',
-    storageBucket: 'your-bucket',
-    iosClientId: 'your-ios-client-id',
-    iosBundleId: 'your-bundle-id',
+    apiKey: 'YOUR-IOS-API-KEY',
+    appId: 'YOUR-IOS-APP-ID',
+    messagingSenderId: 'YOUR-SENDER-ID',
+    projectId: 'YOUR-PROJECT-ID',
+    storageBucket: 'YOUR-STORAGE-BUCKET',
+    iosClientId: 'YOUR-IOS-CLIENT-ID',
+    iosBundleId: 'YOUR-BUNDLE-ID',
   );
 } 

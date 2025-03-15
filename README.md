@@ -2,6 +2,40 @@
 
 A financial literacy mobile application designed to help underserved communities, immigrants, and young adults manage their finances effectively.
 
+## Getting Started with Project IDX
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/money-wing-academy.git
+   cd money-wing-academy
+   ```
+
+2. Set up Firebase:
+   - Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
+   - Enable Authentication (Email/Password and Google Sign-in)
+   - Enable Cloud Firestore
+   - Enable Storage
+   - Add a Flutter application to your Firebase project
+   - Download the Firebase configuration files:
+     - For Android: `google-services.json` → place in `android/app`
+     - For iOS: `GoogleService-Info.plist` → place in `ios/Runner`
+   - Create `lib/core/config/firebase_options.dart` with your Firebase configuration
+
+3. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+
+4. Generate necessary files:
+   ```bash
+   dart run build_runner build
+   ```
+
+5. Run the app:
+   ```bash
+   flutter run
+   ```
+
 ## Features
 
 - 🔐 Secure Authentication
@@ -24,48 +58,7 @@ A financial literacy mobile application designed to help underserved communities
   - Progress monitoring
   - Estimated completion dates
 
-- 📱 User-Friendly Interface
-  - Intuitive navigation
-  - Dark mode support
-  - Responsive design
-
-## Getting Started
-
-### Prerequisites
-
-- Flutter SDK (3.0.0 or higher)
-- Dart SDK (3.0.0 or higher)
-- Android Studio / VS Code
-- Firebase project
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/money_wing_academy.git
-   cd money_wing_academy
-   ```
-
-2. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
-
-3. Configure Firebase:
-   - Create a new Firebase project
-   - Add Android and iOS apps to your Firebase project
-   - Download and add the configuration files:
-     - Android: `google-services.json` to `android/app`
-     - iOS: `GoogleService-Info.plist` to `ios/Runner`
-
-4. Run the app:
-   ```bash
-   flutter run
-   ```
-
-## Architecture
-
-The project follows a clean architecture pattern with the following structure:
+## Project Structure
 
 ```
 lib/
@@ -84,6 +77,21 @@ lib/
       ├── widgets/
       └── services/
 ```
+
+## Development Setup
+
+### Prerequisites
+- Flutter SDK (3.0.0 or higher)
+- Dart SDK (3.0.0 or higher)
+- Firebase project
+- IDE with Flutter support (VS Code, Android Studio, or Project IDX)
+
+### Running in Project IDX
+1. Open the project in Project IDX
+2. Install dependencies: `flutter pub get`
+3. Generate code: `dart run build_runner build`
+4. Configure Firebase
+5. Run the app: `flutter run`
 
 ## Contributing
 
